@@ -1,110 +1,177 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    background-color: #121212;
-    color: #ffffff;
+/* Root Variables */
+:root {
+  --pastel-pink: #f8c8dc;
+  --pastel-blue: #c5dff8;
+  --pastel-purple: #d5c7f8;
+  --pastel-yellow: #fef4b9;
+  --soft-mint: #c8f8e4;
+  --off-white: #fefefe;
+  --text-dark: #3a2e4f;
 }
 
-/* Header */
+/* Global Styles */
+body {
+  background: linear-gradient(180deg, var(--pastel-blue), var(--pastel-pink));
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  color: var(--text-dark);
+  margin: 0;
+  padding: 0;
+}
+
 header {
-    background-color: #276bff;
-    padding: 20px;
-    text-align: center;
+  background-color: var(--pastel-purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5em;
+  margin: 0;
+  font-size: 2.5em;
+}
+
+section {
+  background-color: var(--off-white);
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(58, 46, 79, 0.1);
+  margin-bottom: 2rem;
+}
+
+/* Button Styles */
+button {
+  background-color: var(--pastel-yellow);
+  border: none;
+  color: var(--text-dark);
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--soft-mint);
+}
+
+/* Link Styles */
+a {
+  color: var(--pastel-purple);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* Games Section */
 .games-section {
-    padding: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .game-card {
-    background-color: #1e1e1e;
-    border-radius: 8px;
-    padding: 15px;
-    width: 300px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border: 1px solid #ccc;
+  background-color: var(--text-dark);
+  color: var(--off-white); /* Ensure text is visible on dark background */
+  border-radius: 8px;
+  padding: 15px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--off-white);
 }
 
 .game-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
 .game-card h3 {
-    margin: 10px 0;
+  margin: 10px 0;
 }
 
 /* Contact Section */
 .contact-section {
-    background-color: #333333;
-    padding: 20px;
-    text-align: center;
+  background-color: var(--pastel-purple);
+  padding: 20px;
+  text-align: center;
 }
 
 .contact-section h2 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .contact-section p {
-    margin: 5px 0;
+  margin: 5px 0;
 }
 
 /* Table Styling */
 .game-table {
-    width: 80%;
-    margin: 0 auto;
-    border-collapse: collapse;
-    text-align: left;
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  text-align: left;
+  background-color: var(--off-white); /* Add a distinct background color */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
 }
 
-.game-table th, 
+.game-table th,
 .game-table td {
-    padding: 10px;
-    border: 1px solid #ddd;
-    color: #ffffff;
+  padding: 15px; /* Increase padding for better readability */
+  border: 1px solid var(--pastel-purple); /* Use a pastel border color */
 }
 
 .game-table th {
-    background-color: #f4f4f4;
-    color: #000000;
+  background-color: var(--pastel-blue); /* Distinct header background */
+  color: var(--text-dark); /* Dark text for contrast */
+  font-weight: bold;
+}
+
+.game-table td {
+  color: var(--text-dark); /* Ensure text is readable */
 }
 
 .game-table img {
-    width: 100px;
+  width: 100px;
 }
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
-    .games-section {
-        flex-direction: column;
-        align-items: center;
-    }
+  .games-section {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    .game-card {
-        width: 90%;
-    }
+  .game-card {
+    width: 90%;
+  }
 }
 
+/* Back Home Button */
 .back-home {
-    text-align: center;
-    margin: 20px 0;
+  text-align: center;
+  margin: 20px 0;
 }
 
 .back-home button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Header Banner */
+.header-banner {
+  max-width: 100%;
+  height: auto;
+  width: 500px; /* Adjust this value as needed */
+  display: block;
+  margin: 0 auto;
 }
