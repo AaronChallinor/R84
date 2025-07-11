@@ -143,6 +143,14 @@ a:hover {
   width: 100px;
 }
 
+/* Responsive Table for Mobile */
+@media (max-width: 768px) {
+  .game-table {
+    width: 90%; /* Adjust width for smaller screens */
+    margin: 20px auto; /* Ensure the table is centered */
+  }
+}
+
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   .games-section {
@@ -174,11 +182,13 @@ a:hover {
   width: 500px; /* Default size for larger screens */
   display: block;
   margin: 0 auto;
+  border-radius: 12px; /* Add rounded corners */
 }
 
 /* Responsive Banner for Mobile */
 @media (max-width: 768px) {
   .header-banner {
     width: 90%; /* Adjust width for smaller screens */
+    border-radius: 12px; /* Ensure rounded corners on mobile as well */
   }
 }
