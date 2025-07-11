@@ -146,8 +146,16 @@ a:hover {
 /* Responsive Table for Mobile */
 @media (max-width: 768px) {
   .game-table {
-    width: 90%; /* Adjust width for smaller screens */
-    margin: 20px auto; /* Ensure the table is centered */
+    width: 100%; /* Ensure the table takes up the full width of its container */
+    margin: 20px auto; /* Center the table */
+    overflow-x: auto; /* Allow horizontal scrolling if necessary */
+    display: block; /* Ensure the table behaves like a block element */
+  }
+
+  .game-table th,
+  .game-table td {
+    word-wrap: break-word; /* Ensure long text wraps within cells */
+    white-space: normal; /* Allow text to wrap instead of overflowing */
   }
 }
 
