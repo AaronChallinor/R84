@@ -171,7 +171,14 @@ a:hover {
 .header-banner {
   max-width: 100%;
   height: auto;
-  width: 500px; /* Adjust this value as needed */
+  width: 500px; /* Default size for larger screens */
   display: block;
   margin: 0 auto;
+}
+
+/* Responsive Banner for Mobile */
+@media (max-width: 768px) {
+  .header-banner {
+    width: 90%; /* Adjust width for smaller screens */
+  }
 }
