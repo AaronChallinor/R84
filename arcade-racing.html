@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retro 84 - Retro Gaming Experiences</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -16,6 +17,9 @@
         </button>
     </div>
     <section class="game-list">
+        <div class="section-description" style="text-align: center; margin-bottom: 0px; width: 80%">
+            <p>Slide into the driver’s seat of classic racing cabinets and console setups, complete with force-feedback wheels and CRT monitors. Drift through the corners in Ridge Racer, chase checkpoints in OutRun, or test your skills in high-speed circuit battles. This is hands-on, pedal-to-the-metal retro racing — no license required.</p>
+        </div>
         
         <table class="game-table">
             <thead>
@@ -26,39 +30,8 @@
                     <th>Description</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>Daytona USA 2</td>
-                    <td>1998</td>
-                    <td>Model 3</td>
-                    <td>High-speed arcade racing</td>
-                </tr>
-                <tr>
-                    <td>Scud Race</td>
-                    <td>1996</td>
-                    <td>Model 3</td>
-                    <td>Exotic cars and vibrant tracks.</td>
-                </tr>
-                <tr>                
-                    <td>Emergency Call Ambulance</td>
-                    <td>1999</td>
-                    <td>Model 3</td>
-                    <td>Race to save lives as an ambulance driver.</td>
-                </tr>
-                <tr>      
-                    <td>Outrun 2 SP SDX</td>
-                    <td>2006</td>
-                    <td>Sega Lindbergh</td>
-                    <td>Modernized classic with enhanced gameplay.</td>
-                </tr>
-                <tr>
-                    
-                    <td>Mario Kart Arcade GP</td>
-                    <td>2005</td>
-                    <td>Triforce</td>
-                    <td>Kart racing with Mario and friends.</td>
-                </tr>
-               
+            <tbody id="racing-game-table-body">
+                <!-- Table rows will be dynamically generated here -->
             </tbody>
         </table>
     </section>

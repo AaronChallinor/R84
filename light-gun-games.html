@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retro 84 - Retro Gaming Experiences</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -16,6 +17,9 @@
         </button>
     </div>
     <section class="game-list">
+        <div class="section-description" style="text-align: center; margin-bottom: 0px; width: 80%">
+            <p>Feel the satisfying click of a light gun in your hand as you blast through waves of pixelated enemies on real CRT screens. From high-stakes shootouts in Time Crisis to zombie-blasting in House of the Dead, our light-gun setups are fully operational and ready for action. No emulation tricks — just genuine hardware, sharp aim, and fast reflexes.</p>
+        </div>
         
         <table class="game-table">
             <thead>
@@ -26,50 +30,8 @@
                     <th>Description</th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>Time-Crisis 2</td>
-                    <td>1997</td>
-                    <td>Namco System 23</td>
-                    <td>Fast-paced arcade shooter with co-op gameplay.</td>
-                </tr>
-                <tr>
-                    <td>Time-Crisis 3</td>
-                    <td>2002</td>
-                    <td>Namco System 246</td>
-                    <td>Expanded weapon system and intense action.</td>
-                </tr>
-                <tr>                
-                    <td>Ninja Assault</td>
-                    <td>2000</td>
-                    <td>Namco System 246</td>
-                    <td>Action-packed ninja-themed light-gun game.</td>
-                </tr>
-                <tr>      
-                    <td>Virtua Cop</td>
-                    <td>1994</td>
-                    <td>Sega Model 2</td>
-                    <td>Revolutionary 3D light-gun shooter.</td>
-                </tr>
-                <tr>
-                    <td>Virtua Cop 2</td>
-                    <td>1995</td>
-                    <td>Sega Model 2</td>
-                    <td>Sequel with improved graphics and gameplay.</td>
-                </tr>
-                <tr>
-                    <td>Confidential Mission</td>
-                    <td>2000</td>
-                    <td>Sega NAOMI</td>
-                    <td>Spy-themed light-gun game with co-op mode.</td>
-                </tr>
-                <tr>
-                    <td>The House of the Dead 2</td>
-                    <td>1998</td>
-                    <td>Sega NAOMI</td>
-                    <td>Zombie shooter with branching storylines.</td>
-                </tr>
-               
+            <tbody id="light-gun-table-body">
+                <!-- Table rows will be dynamically generated here -->
             </tbody>
         </table>
     </section>

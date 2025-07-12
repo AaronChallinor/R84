@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Retro 84 - Retro Gaming Experiences</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
         <h1>Retro Console Museum</h1>
-
     </header>
     <div class="back-home" style="text-align: center; margin: 20px;">
         <button onclick="location.href='index.html';">
@@ -17,161 +17,25 @@
         </button>
     </div>
     <section class="game-list">
-    <table class="game-table">
-        <thead>
-            <tr>
-                <th>Console</th>
-                <th>Year</th>
-                <th>Manufacturer</th>
-                <th>Description</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Nintendo Entertainment System (NES)</td>
-                <td>1983</td>
-                <td>Nintendo</td>
-                <td>Revolutionized the gaming industry with iconic titles.</td>
-            </tr>
-            <tr>
-                <td>Famicom</td>
-                <td>1983</td>
-                <td>Nintendo</td>
-                <td>The Japanese version of the NES, a cultural phenomenon in Japan.</td>
-            </tr>
+        <div class="section-description" style="text-align: center; margin-bottom: 0px; width: 80%">
+            <p>More than a museum — this is a fully interactive journey through gaming's golden eras. From the 8-bit charm of the NES to the polygonal leaps of the PS1, our console setups are not just on display — they’re playable. Every system is loaded with iconic titles, restored to perfection, and hooked up to vintage CRTs for that unmistakable old-school feel.
 
-            <tr></tr>
-                <td>Famicom Disk System</td>
-                <td>1986</td>
-                <td>Nintendo</td>
-                <td>An add-on for the Famicom that used floppy disks for expanded storage.</td>
-            </tr>
-
-            <tr>
-                <td>PC Engine</td>
-                <td>1987</td>
-                <td>NEC</td>
-                <td>A compact console with a strong library of arcade-style games.</td>
-            </tr>
-            <tr>
-                <td>PC Engine Duo</td>
-                <td>1991</td>
-                <td>NEC</td>
-                <td>Combined the PC Engine and CD-ROM² into a single console.</td>
-            </tr>
-            <tr>
-                <td>Sega Mega Drive</td>
-                <td>1988</td>
-                <td>Sega</td>
-                <td>Known for its fast-paced games and Sonic the Hedgehog.</td>
-            </tr>
-            <tr>
-                <td>Game Boy</td>
-                <td>1989</td>
-                <td>Nintendo</td>
-                <td>Pioneered portable gaming with interchangeable cartridges.</td>
-            </tr>
-            <tr>
-                <td>Super Nintendo Entertainment System (SNES)</td>
-                <td>1990</td>
-                <td>Nintendo</td>
-                <td>Known for its advanced graphics and iconic games.</td>
-            </tr>
-            <tr>
-                <td>Sega Pico</td>
-                <td>1993</td>
-                <td>Sega</td>
-                <td>An educational console aimed at young children with interactive storybooks.</td>
-            </tr>
-            <tr>
-                <td>Sega Saturn</td>
-                <td>1994</td>
-                <td>Sega</td>
-                <td>Known for its 2D and early 3D gaming capabilities.</td>
-            </tr>
-            <tr>
-                <td>PlayStation</td>
-                <td>1994</td>
-                <td>Sony</td>
-                <td>Introduced 3D gaming and CD-based games.</td>
-            </tr>
-           
-            <tr>
-                <td>Neo Geo Pocket</td>
-                <td>1998</td>
-                <td>SNK</td>
-                <td>Aimed at fans of SNK's arcade games with a compact design.</td>
-            </tr>
-            <tr>
-                <td>Sega Dreamcast</td>
-                <td>1999</td>
-                <td>Sega</td>
-                <td>Featured innovative online gaming capabilities.</td>
-            </tr>
-            <tr>
-                <td>PlayStation 2</td>
-                <td>2000</td>
-                <td>Sony</td>
-                <td>The best-selling console of all time with a vast library of games.</td>
-            </tr>
-            <tr>
-                <td>Game Boy Advance (GBA)</td>
-                <td>2001</td>
-                <td>Nintendo</td>
-                <td>Enhanced portable gaming with improved graphics.</td>
-            </tr>
-            <tr>
-                <td>GameCube</td>
-                <td>2001</td>
-                <td>Nintendo</td>
-                <td>Featured unique mini-disc format and a strong lineup of games.</td>
-            </tr>
-            <tr>
-                <td>PlayStation Portable (PSP)</td>
-                <td>2004</td>
-                <td>Sony</td>
-                <td>Offered console-quality gaming on the go with multimedia capabilities.</td>
-            </tr>
-            <tr>
-                <td>Nintendo DS</td>
-                <td>2004</td>
-                <td>Nintendo</td>
-                <td>Featured dual screens and a touchscreen interface.</td>
-            </tr>
-            <tr>
-                <td>Wii</td>
-                <td>2006</td>
-                <td>Nintendo</td>
-                <td>Revolutionized gaming with motion controls and family-friendly games.</td>
-            </tr>
-            <tr>
-                <td>PlayStation 3</td>
-                <td>2006</td>
-                <td>Sony</td>
-                <td>Introduced Blu-ray support and advanced online gaming features.</td>
-            </tr>
-        
-            <tr>
-                <td>PlayStation Vita</td>
-                <td>2011</td>
-                <td>Sony</td>
-                <td>Known for its high-resolution OLED screen and powerful hardware.</td>
-            </tr>
-            <tr>
-                <td>Nintendo 3DS</td>
-                <td>2011</td>
-                <td>Nintendo</td>
-                <td>Introduced glasses-free 3D gaming and backward compatibility with DS games.</td>
-            </tr>
-            <tr>
-                <td>Nintendo Switch</td>
-                <td>2017</td>
-                <td>Nintendo</td>
-                <td>Hybrid console offering both handheld and docked gaming experiences.</td>
-            </tr>
-        </tbody>
-    </table>
-</section>
+            </p>
+        </div>
+        <table class="game-table">
+            <thead>
+                <tr>
+                    <th>Console</th>
+                    <th>Year</th>
+                    <th>Manufacturer</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody id="console-table-body">
+                <!-- Table rows will be dynamically generated here -->
+            </tbody>
+        </table>
+    </section>
     <div class="spacer" style="height: 50px;"></div>
     <section class="contact-section">
         <h2>Contact</h2>
