@@ -18,14 +18,29 @@ body {
   padding: 0;
 }
 
-header {
+/* header {
   background-color: var(--pastel-purple);
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 2rem;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+} */
+
+header {
+  background-color: var(--pastel-purple);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Remove padding to allow the banner to fill the space */
+  height: 100%; /* Ensure the header height is fully utilized */
+  text-align: center;
 }
+
+
+
+
+
 
 header h1 {
   margin: 0;
@@ -35,7 +50,7 @@ header h1 {
 section {
   background-color: var(--off-white);
   padding: 1.5rem;
-  border-radius: 12px;
+  border-radius: 0;
   box-shadow: 0 4px 8px rgba(58, 46, 79, 0.1);
   margin-bottom: 2rem;
 }
@@ -71,6 +86,7 @@ a:hover {
 
 /* Game List Section */
 .game-list {
+  margin-top: 0px;
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -174,6 +190,7 @@ a:hover {
 }
 
 /* Header Banner */
+/*
 .header-banner {
   max-width: 100%;
   height: auto;
@@ -182,11 +199,23 @@ a:hover {
   margin: 0 auto;
   border-radius: 12px;
 }
+*/
+
+.header-banner {
+  width: 100%; /* Make the banner take up the full width */
+  height: 100%; /* Make the banner take up the full height */
+  object-fit: cover; /* Ensure the image scales properly without distortion */
+  display: block;
+}
+
+
+
+
 
 /* Responsive Banner for Mobile */
 @media (max-width: 768px) {
   .header-banner {
-    width: 90%;
+    width: 100%;
   }
 }
 
