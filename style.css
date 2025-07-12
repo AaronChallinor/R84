@@ -49,11 +49,13 @@ button {
   padding: 0.75rem 1.5rem;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
   background-color: var(--soft-mint);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 /* Link Styles */
@@ -67,24 +69,30 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Games Section */
+/* Game List Section */
 .game-list {
   padding: 20px;
   display: flex;
-  flex-wrap: wrap; /* Allow wrapping of cards */
-  gap: 20px; /* Add spacing between cards */
-  justify-content: center; /* Center the cards */
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
 }
 
 .game-card {
   background-color: var(--text-dark);
-  color: var(--off-white); /* Ensure text is visible on dark background */
+  color: var(--off-white);
   border-radius: 8px;
   padding: 15px;
   width: 300px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border: 1px solid var(--off-white);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .game-card img {
@@ -96,7 +104,7 @@ a:hover {
 .game-card h3 {
   margin: 10px 0;
 }
- 
+
 /* Contact Section */
 .contact-section {
   background-color: var(--pastel-purple);
@@ -118,25 +126,25 @@ a:hover {
   margin: 20px auto;
   border-collapse: collapse;
   text-align: left;
-  background-color: var(--off-white); /* Add a distinct background color */
-  border-radius: 8px; /* Add rounded corners */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+  background-color: var(--off-white);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .game-table th,
 .game-table td {
-  padding: 15px; /* Increase padding for better readability */
-  border: 1px solid var(--pastel-purple); /* Use a pastel border color */
+  padding: 15px;
+  border: 1px solid var(--pastel-purple);
 }
 
 .game-table th {
-  background-color: var(--pastel-blue); /* Distinct header background */
-  color: var(--text-dark); /* Dark text for contrast */
+  background-color: var(--pastel-blue);
+  color: var(--text-dark);
   font-weight: bold;
 }
 
 .game-table td {
-  color: var(--text-dark); /* Ensure text is readable */
+  color: var(--text-dark);
 }
 
 .game-table img {
@@ -146,28 +154,16 @@ a:hover {
 /* Responsive Table for Mobile */
 @media (max-width: 768px) {
   .game-table {
-    width: 90%; /* Ensure the table takes up the full width of its container */
-    margin: 20px auto; /* Center the table */
-    overflow-x: auto; /* Allow horizontal scrolling if necessary */
-    display: block; /* Ensure the table behaves like a block element */
+    width: 90%;
+    margin: 20px auto;
+    overflow-x: auto;
+    display: block;
   }
 
   .game-table th,
   .game-table td {
-    word-wrap: break-word; /* Ensure long text wraps within cells */
-    white-space: normal; /* Allow text to wrap instead of overflowing */
-  }
-}
-
-/* Mobile Responsiveness */
-@media (max-width: 768px) {
-  .game-list {
-    flex-direction: column; /* Stack cards vertically on small screens */
-    align-items: center; /* Center the cards */
-  }
-
-  .game-card {
-    width: 90%; /* Make cards take up most of the screen width */
+    word-wrap: break-word;
+    white-space: normal;
   }
 }
 
@@ -177,58 +173,21 @@ a:hover {
   margin: 20px 0;
 }
 
-.back-home button {
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-}
-
 /* Header Banner */
 .header-banner {
   max-width: 100%;
   height: auto;
-  width: 500px; /* Default size for larger screens */
+  width: 500px;
   display: block;
   margin: 0 auto;
-  border-radius: 12px; /* Add rounded corners */
+  border-radius: 12px;
 }
 
 /* Responsive Banner for Mobile */
 @media (max-width: 768px) {
   .header-banner {
-    width: 90%; /* Adjust width for smaller screens */
-    border-radius: 12px; /* Ensure rounded corners on mobile as well */
+    width: 90%;
   }
-}
-
-/* Game List Section */
-.game-list {
-  padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.game-card {
-  background-color: var(--text-dark);
-  color: var(--off-white); /* Ensure text is visible on dark background */
-  border-radius: 8px;
-  padding: 15px;
-  width: 300px;
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  border: 1px solid var(--off-white);
-}
-
-.game-card img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.game-card h3 {
-  margin: 10px 0;
 }
 
 /* Mobile Responsiveness */
@@ -241,23 +200,4 @@ a:hover {
   .game-card {
     width: 90%;
   }
-}
-
-.game-card {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.game-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
-}
-
-
-.back-home button {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.back-home button:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
