@@ -37,11 +37,6 @@ header {
   text-align: center;
 }
 
-
-
-
-
-
 header h1 {
   margin: 0;
   font-size: 2.5em;
@@ -208,10 +203,6 @@ a:hover {
   display: block;
 }
 
-
-
-
-
 /* Responsive Banner for Mobile */
 @media (max-width: 768px) {
   .header-banner {
@@ -229,4 +220,23 @@ a:hover {
   .game-card {
     width: 90%;
   }
+}
+
+.game-card.coming-soon {
+  position: relative;
+  cursor: default; /* Disable pointer cursor */
+  pointer-events: none; /* Make the card unclickable */
+}
+
+.game-card.coming-soon .ribbon {
+  position: absolute;
+  top: 10px;
+  left: -15px; /* Adjusted position for better alignment */
+  background-color: #ff0000; /* Red ribbon color */
+  color: #fff;
+  padding: 10px 25px; /* Increased padding to make the ribbon wider and thicker */
+  font-size: 1rem; /* Increased font size for better readability */
+  font-weight: bold;
+  transform: rotate(-30deg); /* Reduced angle for a less extreme tilt */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }

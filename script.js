@@ -91,8 +91,8 @@ document.addEventListener('DOMContentLoaded', () => {
   
         // Bar-top arcade machines
         const bartopMachines = [
-            { machine: 'Neo-Geo MDF', screen: '19 Inch', players: 2, capabilities: '2D Classics (Up to Neo-Geo / CPS2)' },
-            { machine: 'Windjammers', screen: '22 Inch', players: 2, capabilities: '3D Arcade Games (Up to Naomi / Atomiwave)' }
+            { machine: 'Red', screen: '19 Inch', players: 2, capabilities: '2D Classics (Up to Neo-Geo / CPS2)' },
+            { machine: 'Blue', screen: '24 Inch', players: 2, capabilities: '3D Arcade Games (Up to Naomi / Atomiwave)' }
         ];
     
 
